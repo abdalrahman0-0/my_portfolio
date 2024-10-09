@@ -12,7 +12,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 html {
@@ -24,12 +23,11 @@ body {
   padding-top: 50px;
   overflow-x: hidden;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
 }
-
 ::-webkit-scrollbar-track {
   background-color: var(--color);
   border-radius: 100vh;
@@ -89,7 +87,8 @@ nav svg {
 /*======================= End navbar ===================== */
 
 /*======================= Start Home ===================== */
-.description,#home{
+.description,
+#home {
   color: var(--color3);
 }
 

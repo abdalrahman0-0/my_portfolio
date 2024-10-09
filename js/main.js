@@ -9,9 +9,6 @@ document.querySelectorAll("h1").forEach((el) => {
     })
     .join(" ");
 });
-// document.querySelectorAll('h1').forEach(el => {
-//     el.innerHTML =console.log( el.textContent.trim().split(' '))
-// });
 
 //====================================================
 // Get all sections and navigation links
@@ -30,7 +27,6 @@ function updateActiveClass() {
       currentSection = section.getAttribute("id");
     }
   });
-
   // Remove active class from all nav links
   navLinks.forEach((link) => {
     link.classList.remove("active");
@@ -85,6 +81,4 @@ function deleteWriter() {
     setTimeout(typeWriter, typingSpeed);
   }
 }
-
-// Start typing effect
 typeWriter();
