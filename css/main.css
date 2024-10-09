@@ -52,6 +52,7 @@ a {
 
 .navbar {
   background-color: transparent;
+  transition: background-color 2s ease; 
 }
 
 .navbar.glassy {
