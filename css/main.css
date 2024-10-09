@@ -1,0 +1,270 @@
+:root {
+  --color: #001217;
+  --color2: #49cff4;
+  /* --color3: #fbebe9; */
+  --color3: #e5e5e5;
+  --color4: #ff5c00;
+  --color5: #49cff4b7;
+  --bg-sec: #000f12;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--color);
+  padding-top: 50px;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color);
+  border-radius: 100vh;
+  margin: 0.4em 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100vh;
+  background-color: var(--color2);
+}
+
+::-webkit-scrollbar {
+  width: 1.3em;
+}
+
+::selection {
+  color: var(--color);
+  background-color: var(--color2);
+}
+
+/*======================= Start navbar ===================== */
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar.glassy {
+  background-color: #0012179f;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  box-shadow: 0 10px 30px #49cff421;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--color3) !important;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color2) !important;
+  border-bottom: 3px solid var(--color2);
+}
+
+.nav-item {
+  padding-inline: 15px;
+}
+
+nav svg {
+  color: var(--color2);
+}
+.navbar button:focus {
+  color: var(--color2);
+}
+
+/*======================= End navbar ===================== */
+
+/*======================= Start Home ===================== */
+.description,#home{
+  color: var(--color3);
+}
+
+.icon a {
+  display: inline-flex;
+  background: transparent;
+  border: 2px solid var(--color2);
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 3rem 0.5rem;
+  color: var(--color2);
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.icon a:hover {
+  background-color: var(--color2);
+  border: 2px solid var(--color2);
+  box-shadow: 0 0 25px var(--color2);
+  transform: scale(1.3) translateY(-15px);
+  color: var(--color);
+}
+
+.first-letter {
+  color: var(--color2);
+}
+.orange:last-of-type {
+  color: var(--color4);
+}
+
+.img-container {
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  min-width: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px var(--color2);
+  transition: 0.4s;
+}
+.img-container:hover {
+  box-shadow: 0 0 35px var(--color2);
+}
+
+.img-container img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+  padding-block: 20px;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: var(--color2);
+  width: 2px;
+  height: 1.2em;
+  margin-left: 2px;
+  animation: blink 0.7s steps(20) infinite;
+  margin-bottom: -3px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-container {
+  font-family: monospace;
+  font-size: 24px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/*======================= End Home ===================== */
+
+/*======================= Start about ===================== */
+
+.about-button a {
+  background-color: var(--color2);
+  border: 2px solid var(--color2);
+  color: var(--color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  box-shadow: 0 0 10px var(--color2);
+  border-radius: 3rem;
+  padding: 1rem 3rem;
+  transition: 0.4s;
+}
+
+.about-button a:nth-of-type(2) {
+  background-color: transparent;
+  color: var(--color2);
+}
+
+.about-button a:nth-of-type(1):hover {
+  scale: 1.1;
+  box-shadow: 0 0 40px var(--color2);
+}
+.about-button a:nth-of-type(2):hover {
+  background-color: var(--color2);
+  color: var(--color);
+  scale: 1;
+}
+/*======================= End about ===================== */
+
+/*======================= Start Contact ===================== */
+.form-control {
+  background-color: var(--color);
+  border: 2px solid var(--color2);
+  color: var(--color5);
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  caret-color: var(--color4);
+}
+.form-control:focus {
+  background-color: var(--color);
+  border: 2px solid var(--color4);
+  color: var(--color2);
+  box-shadow: none;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px var(--color) inset !important;
+  -webkit-text-fill-color: var(--color5) !important;
+}
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color2) !important;
+}
+
+input:-moz-autofill {
+  box-shadow: 0 0 0 50px var(--color) inset !important;
+  color: var(--color5) !important;
+}
+input:-moz-autofill {
+  -webkit-text-fill-color: var(--color2) !important;
+}
+
+textarea {
+  resize: none;
+}
+/*======================= End Contact ===================== */
+h2 {
+  color: var(--color3);
+}
+.co {
+  color: var(--color2);
+}
+
+/*======================= Start project ===================== */
+.card {
+  border: 3px solid var(--color2);
+  background-color: var(--bg-sec);
+  color: var(--color3);
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 35px var(--color2);
+  transform: scale(1.03);
+}
+
+.card img {
+  border-radius: 30px;
+}
+/*======================= End project ===================== */
+
+footer {
+  background-color: var(--bg-sec);
+}
+
+#about-me {
+  background-color: var(--bg-sec);
+}
