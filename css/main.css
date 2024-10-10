@@ -1,11 +1,11 @@
 :root {
-  --color: #001217;
+  --bg-sec: #00181f;
   --color2: #49cff4;
-  /* --color3: #fbebe9; */
   --color3: #e5e5e5;
   --color4: #ff5c00;
+  --color14: #ff5e0077;
   --color5: #49cff4b7;
-  --bg-sec: #000f12;
+  --color: #000f12;
 }
 
 * {
@@ -20,14 +20,21 @@ html {
 
 body {
   background-color: var(--color);
-  padding-top: 50px;
+  color: var(--color3);
+  padding-top: 40px;
   overflow-x: hidden;
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
 }
+
+.co {
+  color: var(--color2);
+}
+
 ::-webkit-scrollbar-track {
   background-color: var(--color);
   border-radius: 100vh;
@@ -52,7 +59,7 @@ a {
 
 .navbar {
   background-color: transparent;
-  transition: background-color 2s ease; 
+  transition: background-color 2s ease;
 }
 
 .navbar.glassy {
@@ -88,11 +95,9 @@ nav svg {
 /*======================= End navbar ===================== */
 
 /*======================= Start Home ===================== */
-.description,
 #home {
-  color: var(--color3);
+  background-color: var(--bg-sec);
 }
-
 .icon a {
   display: inline-flex;
   background: transparent;
@@ -199,9 +204,33 @@ nav svg {
 }
 /*======================= End about ===================== */
 
+/*======================= Start project ===================== */
+#projects {
+  background-color: var(--bg-sec);
+}
+.card {
+  border: 3px solid var(--color2);
+  background-color: var(--bg-sec);
+  color: var(--color3);
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card:hover {
+  background-color: var(--color);
+  box-shadow: 0 0 35px var(--color2);
+  transform: scale(1.03);
+}
+
+.card img {
+  border-radius: 30px;
+}
+/*======================= End project ===================== */
+
 /*======================= Start Contact ===================== */
 .form-control {
-  background-color: var(--color);
+  /* background-color: var(--color); */
+  background-color: var(--bg-sec);
   border: 2px solid var(--color2);
   color: var(--color5);
   border-radius: 15px;
@@ -210,13 +239,13 @@ nav svg {
   caret-color: var(--color4);
 }
 .form-control:focus {
-  background-color: var(--color);
+  background-color: var(--bg-sec);
   border: 2px solid var(--color4);
   color: var(--color2);
   box-shadow: none;
 }
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px var(--color) inset !important;
+  -webkit-box-shadow: 0 0 0 50px var(--bg-sec) inset !important;
   -webkit-text-fill-color: var(--color5) !important;
 }
 input:-webkit-autofill:focus {
@@ -224,7 +253,7 @@ input:-webkit-autofill:focus {
 }
 
 input:-moz-autofill {
-  box-shadow: 0 0 0 50px var(--color) inset !important;
+  box-shadow: 0 0 0 50px var(--bg-sec) inset !important;
   color: var(--color5) !important;
 }
 input:-moz-autofill {
@@ -235,36 +264,7 @@ textarea {
   resize: none;
 }
 /*======================= End Contact ===================== */
-h2 {
-  color: var(--color3);
-}
-.co {
-  color: var(--color2);
-}
-
-/*======================= Start project ===================== */
-.card {
-  border: 3px solid var(--color2);
-  background-color: var(--bg-sec);
-  color: var(--color3);
-  border-radius: 25px;
-  overflow: hidden;
-  transition: 0.3s;
-}
-.card:hover {
-  box-shadow: 0 0 35px var(--color2);
-  transform: scale(1.03);
-}
-
-.card img {
-  border-radius: 30px;
-}
-/*======================= End project ===================== */
 
 footer {
-  background-color: var(--bg-sec);
-}
-
-#about-me {
   background-color: var(--bg-sec);
 }
