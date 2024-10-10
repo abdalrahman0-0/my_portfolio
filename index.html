@@ -54,7 +54,8 @@
                     <h1 class="display-3 fw-bold">
                         Hi, I'm Abdelrahman
                     </h1>
-                    <h3 class="my-4">I'm a <span id="typingEffect" class="typing-container"></span><span class="cursor"></span></h3>
+                    <h3 class="my-4">I'm a <span id="typingEffect" class="typing-container"></span><span
+                            class="cursor"></span></h3>
                     <p class="lead description ">
                         with a passion for crafting user-friendly, responsive websites. Skilled in
                         HTML5, CSS3, JavaScript, Bootstrap, and Angular, I specialize in creating dynamic, interactive
@@ -229,20 +230,23 @@
         <h2 class="text-center text-capitalize my-5 display-3 fw-bold">contact <span class="co">me</span></h2>
         <div class="row">
             <div class="col-12 col-lg-7 ">
-                <div class="form-text">
-                    <input type="text" class="form-control" name="full-name" id="full-name" placeholder="Full Name">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                    <input type="text" class="form-control" name="number" id="number" placeholder="Phone Number">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                </div>
+                <form action="https://formspree.io/f/xpwzaenn" method="POST" class="form-text">
+                    <input type="text" class="form-control" name="full-name" id="full-name" placeholder="Full Name" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    <input type="text" class="form-control" name="number" id="number" placeholder="Phone Number" required>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
+
             <div class="col-12 col-lg-5">
                 <textarea class="form-control" name="form-text" rows="8" maxlength="600" id="form-text"
                     placeholder="Your Message"></textarea>
                 <div class="about-button d-flex">
-                    <a href="" class="mx-auto">Submit</a>
+                    <button type="submit" class="mx-auto">Submit</button>
+                    <!-- <a href="" type="submit" >Submit</a> -->
                 </div>
             </div>
+            </form>
+            <!-- </div> -->
         </div>
     </section>
     <!-- End Contact Section -->

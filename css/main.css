@@ -176,7 +176,8 @@ nav svg {
 
 /*======================= Start about ===================== */
 
-.about-button a {
+.about-button a,
+.about-button button {
   background-color: var(--color2);
   border: 2px solid var(--color2);
   color: var(--color);
@@ -193,7 +194,8 @@ nav svg {
   color: var(--color2);
 }
 
-.about-button a:nth-of-type(1):hover {
+.about-button a:nth-of-type(1):hover,
+.about-button button:hover {
   scale: 1.1;
   box-shadow: 0 0 40px var(--color2);
 }
@@ -229,7 +231,6 @@ nav svg {
 
 /*======================= Start Contact ===================== */
 .form-control {
-  /* background-color: var(--color); */
   background-color: var(--bg-sec);
   border: 2px solid var(--color2);
   color: var(--color5);
@@ -242,7 +243,7 @@ nav svg {
   background-color: var(--bg-sec);
   border: 2px solid var(--color4);
   color: var(--color2);
-  box-shadow: none;
+  box-shadow: 0 0 15px var(--color2); 
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 50px var(--bg-sec) inset !important;
