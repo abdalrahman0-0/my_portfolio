@@ -211,7 +211,7 @@ nav svg {
   background-color: var(--bg-sec);
 }
 .card {
-  border: 3px solid var(--color2);
+  border: 3px solid var(--color4);
   background-color: var(--bg-sec);
   color: var(--color3);
   border-radius: 25px;
