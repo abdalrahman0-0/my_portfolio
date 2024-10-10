@@ -217,6 +217,7 @@ nav svg {
   border-radius: 25px;
   overflow: hidden;
   transition: 0.3s;
+  height: 570px;
 }
 .card:hover {
   background-color: var(--color);
@@ -232,7 +233,7 @@ nav svg {
 /*======================= Start Contact ===================== */
 .form-control {
   background-color: var(--bg-sec);
-  border: 2px solid var(--color2);
+  border: 2px solid var(--color4);
   color: var(--color5);
   border-radius: 15px;
   margin-bottom: 30px;
